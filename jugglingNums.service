@@ -1,0 +1,12 @@
+[Unit]
+Description=Juggling numbers around
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+ExecStart=/usr/bin/numbersWriter "/home/viktor/Desktop/serviceTest/from" "/home/viktor/Desktop/serviceTest/to"
+
+[Install]
+WantedBy=multi-user.target
